@@ -1,9 +1,9 @@
-import {Card, Typography} from "@/shared/ui";
+import { Card, Typography } from "@/shared/ui";
 
 import s from './score-board.module.scss'
 import logo from '@/shared/assets/images/logo.svg'
-import {useSelector} from "react-redux";
-import {getPlayerScore} from "@/features/game/game.selectors";
+import { useSelector } from "react-redux";
+import { getPlayerScore } from "@/features/game/game.selectors";
 
 export const ScoreBoard = () => {
     const score = useSelector(getPlayerScore);

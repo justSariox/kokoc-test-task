@@ -1,4 +1,4 @@
-import {createBrowserRouter, RouteObject, RouterProvider} from "react-router-dom";
+import { createBrowserRouter, RouteObject, RouterProvider } from "react-router-dom";
 import { StartPage, GamePage } from "@/pages";
 
 

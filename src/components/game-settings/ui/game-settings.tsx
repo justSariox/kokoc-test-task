@@ -1,9 +1,9 @@
-import {Button} from "@/shared/ui";
+import { Button } from "@/shared/ui";
 
 import s from './game-settings.module.scss'
-import {useDispatch, useSelector} from "react-redux";
-import {getGameType} from "@/features/game/game.selectors";
-import {resetGame, setIsBonusGame} from "@/features/game/game.slice";
+import { useDispatch, useSelector } from "react-redux";
+import { getGameType } from "@/features/game/game.selectors";
+import { resetGame, setIsBonusGame } from "@/features/game/game.slice";
 
 type GameSettingsProps = {
     onRulesButtonClick: () => void

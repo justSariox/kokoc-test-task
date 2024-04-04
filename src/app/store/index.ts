@@ -1,4 +1,4 @@
-import {combineReducers, configureStore} from '@reduxjs/toolkit';
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
 import gameReducer from '@/features/game/game.slice';
 import figuresReducer from '@/features/figure/figure.slice';

@@ -1,5 +1,5 @@
-import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {AppRootStateType} from "@/app/store";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { AppRootStateType } from "@/app/store";
 
 interface AppState {
     isLoading: boolean;

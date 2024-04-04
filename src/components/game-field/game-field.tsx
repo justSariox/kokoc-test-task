@@ -1,20 +1,19 @@
-import s from './game-field.module.scss';
-import { IFigure } from '@/features/figure/figure.types';
-import { useDispatch, useSelector } from 'react-redux';
-import { allFigures } from '@/features/figure/figure.selector';
-import { Figure } from '@/components/figure/ui/figure';
-import {
-    resetPlayerScore,
-    incrementPlayerScore,
-    setComputerFigure,
-    setPlayerFigure,
-} from '@/features/game/game.slice';
-import { getRandomFigure } from '@/utils/getRandomFigure';
-import { getWinner } from '@/utils/gameRules';
-import { getComputerFigure, getGameType } from '@/features/game/game.selectors';
-import { useCallback } from 'react';
-import { isLoading, setIsLoading } from '@/app/slice';
-import { Loader } from '@/shared/ui/loader/loader';
+import s from "./game-field.module.scss";
+import { useDispatch, useSelector } from "react-redux";
+import { useCallback } from "react";
+
+import { allFigures } from "@/features/figure/figure.selector";
+import { getComputerFigure, getGameType } from "@/features/game/game.selectors";
+
+import { isLoading, setIsLoading } from "@/app/slice";
+import { incrementPlayerScore, resetPlayerScore, setComputerFigure, setPlayerFigure } from "@/features/game/game.slice";
+
+import { getRandomFigure, getWinner } from "@/utils";
+
+import { IFigure } from "@/features/figure/figure.types";
+
+import { Figure } from "@/components";
+import { Loader } from "@/shared/ui";
 
 export const GameField = () => {
     const { figures } = useSelector(allFigures);

@@ -1,5 +1,5 @@
 import s from './figure.module.scss'
-import {IFigure} from "@/features/figure/figure.types";
+import { IFigure } from "@/features/figure/figure.types";
 
 
 type FigureProps = {
