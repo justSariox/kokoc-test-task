@@ -1,0 +1,1 @@
+export { RULES_TEXT, DEFAULT_RULES_TEXT, BONUS_RULES_TEXT } from './rules'

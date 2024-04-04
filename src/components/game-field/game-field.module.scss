@@ -1,0 +1,58 @@
+$icon-rock: url('../../shared/assets/images/icon-rock.svg');
+$icon-paper: url('../../shared/assets/images/icon-paper.svg');
+$icon-scissors: url('../../shared/assets/images/icon-scissors.svg');
+$icon-spock: url('../../shared/assets/images/icon-spock.svg');
+$icon-lizard: url('../../shared/assets/images/icon-lizard.svg');
+
+.gameField {
+
+  width: 100%;
+
+  margin-top: 3.125rem;
+
+  display: flex;
+  flex-direction: column;
+
+  }
+
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.computerChoice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.computerIcon {
+  width: 100px;
+  height: 130px;
+  background-repeat: no-repeat;
+
+
+
+  &.rock {
+    background-image: $icon-rock;
+  }
+
+  &.paper {
+    background-image: $icon-paper;
+  }
+
+  &.scissors {
+    background-image: $icon-scissors;
+  }
+
+  &.spock {
+    background-image: $icon-spock;
+  }
+
+  &.lizard {
+    background-image: $icon-lizard;
+  }
+}

@@ -1,0 +1,62 @@
+$icon-rock: url('../../../shared/assets/images/icon-rock.svg');
+$icon-paper: url('../../../shared/assets/images/icon-paper.svg');
+$icon-scissors: url('../../../shared/assets/images/icon-scissors.svg');
+$icon-spock: url('../../../shared/assets/images/icon-spock.svg');
+$icon-lizard: url('../../../shared/assets/images/icon-lizard.svg');
+
+.figureCircle {
+  border: 10px solid;
+
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+
+  &:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.figure {
+  position: relative;
+  border-radius: 50%;
+  background: white;
+  width: 100%;
+  height: 100%;
+
+  .icon {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+
+
+    &.rock {
+      background-image: $icon-rock;
+    }
+
+    &.paper {
+      background-image: $icon-paper;
+    }
+
+    &.scissors {
+      background-image: $icon-scissors;
+    }
+
+    &.spock {
+      background-image: $icon-spock;
+    }
+
+    &.lizard {
+      background-image: $icon-lizard;
+    }
+  }
+
+
+}

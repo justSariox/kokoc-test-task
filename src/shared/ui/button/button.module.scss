@@ -1,0 +1,60 @@
+@mixin button {
+  all: unset;
+
+  cursor: pointer;
+
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  max-height: 36px;
+  padding: 6px 28px;
+
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-m);
+
+  border-radius: 8px;
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &:focus-visible {
+    border: 2px solid var(--color-info);
+  }
+
+}
+
+.primary {
+  @include button;
+
+  color: var(--color-light);
+  background-color: var(--color-accent);
+  box-shadow: 0 4px 18px 0 rgb(25 39 70 / 35%);
+  border: 2px solid var(--color-light);
+
+  &:focus:enabled {
+    background-color: var(--color-accent-300);
+    outline: 2px solid var(--color-info-700);
+  }
+
+  &:hover:enabled {
+    background-color: var(--color-light);
+    color: var(--color-info);
+  }
+
+  &:disabled {
+    color: var(--color-light);
+    background-color: var(--color-light-100);
+
+  }
+
+  &:active:enabled {
+    background-color: var(--color-light-500);
+  }
+}
+

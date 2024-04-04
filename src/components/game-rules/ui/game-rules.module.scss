@@ -1,0 +1,15 @@
+.modalRules {
+  display: flex;
+  flex-direction: column;
+
+  .rulesList {
+    list-style: none;
+  }
+
+}
+
+.rulesPic {
+  width: 380px;
+  height: 380px;
+  align-self: center;
+}
